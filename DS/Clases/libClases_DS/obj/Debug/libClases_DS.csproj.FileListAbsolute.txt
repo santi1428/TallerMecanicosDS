@@ -1,0 +1,9 @@
+C:\Users\santi\Desktop\TallerMecanicosDS\DS\Clases\libClases_DS\bin\Debug\libClases_DS.dll
+C:\Users\santi\Desktop\TallerMecanicosDS\DS\Clases\libClases_DS\bin\Debug\libClases_DS.pdb
+C:\Users\santi\Desktop\TallerMecanicosDS\DS\Clases\libClases_DS\bin\Debug\libComunes.dll
+C:\Users\santi\Desktop\TallerMecanicosDS\DS\Clases\libClases_DS\bin\Debug\libComunes.pdb
+C:\Users\santi\Desktop\TallerMecanicosDS\DS\Clases\libClases_DS\obj\Debug\libClases_DS.csprojAssemblyReference.cache
+C:\Users\santi\Desktop\TallerMecanicosDS\DS\Clases\libClases_DS\obj\Debug\libClases_DS.csproj.CoreCompileInputs.cache
+C:\Users\santi\Desktop\TallerMecanicosDS\DS\Clases\libClases_DS\obj\Debug\libClases_DS.csproj.CopyComplete
+C:\Users\santi\Desktop\TallerMecanicosDS\DS\Clases\libClases_DS\obj\Debug\libClases_DS.dll
+C:\Users\santi\Desktop\TallerMecanicosDS\DS\Clases\libClases_DS\obj\Debug\libClases_DS.pdb

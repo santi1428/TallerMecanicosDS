@@ -1,0 +1,30 @@
+C:\Users\docenteitm\Documents\DS\Clases\libComunes\obj\Debug\libComunes.csprojAssemblyReference.cache
+C:\Users\docenteitm\Documents\DS\Clases\libComunes\obj\Debug\libComunes.csproj.CoreCompileInputs.cache
+C:\Users\docenteitm\Documents\DS\Clases\libComunes\bin\Debug\libComunes.dll
+C:\Users\docenteitm\Documents\DS\Clases\libComunes\bin\Debug\libComunes.pdb
+C:\Users\docenteitm\Documents\DS\Clases\libComunes\obj\Debug\libComunes.dll
+C:\Users\docenteitm\Documents\DS\Clases\libComunes\obj\Debug\libComunes.pdb
+C:\Users\docenteitm\Documents\DS\libComunes\bin\Debug\libComunes.dll
+C:\Users\docenteitm\Documents\DS\libComunes\bin\Debug\libComunes.pdb
+C:\Users\docenteitm\Documents\DS\libComunes\obj\Debug\libComunes.csprojAssemblyReference.cache
+C:\Users\docenteitm\Documents\DS\libComunes\obj\Debug\libComunes.csproj.CoreCompileInputs.cache
+C:\Users\docenteitm\Documents\DS\libComunes\obj\Debug\libComunes.dll
+C:\Users\docenteitm\Documents\DS\libComunes\obj\Debug\libComunes.pdb
+C:\Users\docenteitm\Documents\DS\Clase 5\libComunes\bin\Debug\libComunes.dll
+C:\Users\docenteitm\Documents\DS\Clase 5\libComunes\bin\Debug\libComunes.pdb
+C:\Users\docenteitm\Documents\DS\Clase 5\libComunes\obj\Debug\libComunes.csprojAssemblyReference.cache
+C:\Users\docenteitm\Documents\DS\Clase 5\libComunes\obj\Debug\libComunes.csproj.CoreCompileInputs.cache
+C:\Users\docenteitm\Documents\DS\Clase 5\libComunes\obj\Debug\libComunes.dll
+C:\Users\docenteitm\Documents\DS\Clase 5\libComunes\obj\Debug\libComunes.pdb
+C:\Users\salak406\Documents\DS\libComunes\bin\Debug\libComunes.dll
+C:\Users\salak406\Documents\DS\libComunes\bin\Debug\libComunes.pdb
+C:\Users\salak406\Documents\DS\libComunes\obj\Debug\libComunes.csprojAssemblyReference.cache
+C:\Users\salak406\Documents\DS\libComunes\obj\Debug\libComunes.csproj.CoreCompileInputs.cache
+C:\Users\salak406\Documents\DS\libComunes\obj\Debug\libComunes.dll
+C:\Users\salak406\Documents\DS\libComunes\obj\Debug\libComunes.pdb
+C:\Users\santi\Documents\libComunes\bin\Debug\libComunes.dll
+C:\Users\santi\Documents\libComunes\bin\Debug\libComunes.pdb
+C:\Users\santi\Documents\libComunes\obj\Debug\libComunes.csprojAssemblyReference.cache
+C:\Users\santi\Documents\libComunes\obj\Debug\libComunes.csproj.CoreCompileInputs.cache
+C:\Users\santi\Documents\libComunes\obj\Debug\libComunes.dll
+C:\Users\santi\Documents\libComunes\obj\Debug\libComunes.pdb

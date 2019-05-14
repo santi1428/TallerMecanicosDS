@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="SitioWEB.Layout" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <style>
+        .nav-link{
+          font-size: 14.8px;
+        }
+        .navbar-brand{
+          font-size: 18.8px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0">
+          <a class="navbar-brand ml-5" href="#"><i class="fas fa-wrench mr-2"></i>TallerAutos</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-5">
+                <li class="nav-item" id="inicio-nav"><a class="nav-link py-3 mr-4 px-4 active" href="#"><i class="fas fa-home mr-2"></i>Inicio</a></li>
+                <li class="nav-item" id="servicios-nav"><a class="nav-link py-3 mr-4 px-4 active" href="/BasesDatos/Servicio.aspx"><i class="fas fa-star mr-2"></i>Servicios</a></li>
+                <li class="nav-item" id="repuestos-nav"><a class="nav-link py-3 mr-4 px-4 active" href="/BasesDatos/Repuesto.aspx"><i class="fas fa-tools mr-2"></i>Repuestos</a></li>
+            </ul>
+           <%-- <ul class="navbar-nav ml-auto">
+                <a class="nav-item nav-link py-3 mr-4 px-4 active" href="#"><i class="fas fa-user-plus mr-2"></i>Registrarse</a>
+                <a class="nav-item nav-link py-3 mr-5 px-4 active" href="#"><i class="fas fa-sign-in-alt mr-2"></i>Iniciar Sesión</a>
+            </ul>--%>
+          </div>
+    </nav>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
