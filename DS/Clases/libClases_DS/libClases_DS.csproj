@@ -45,14 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseDatos\clsCargo.cs" />
-    <Compile Include="BaseDatos\clsDepartamento.cs" />
-    <Compile Include="BaseDatos\clsEmpleado.cs" />
-    <Compile Include="BaseDatos\clsPais.cs" />
     <Compile Include="BaseDatos\clsRepuesto.cs" />
     <Compile Include="BaseDatos\clsServicio.cs" />
-    <Compile Include="BaseDatos\clsSupermercado.cs" />
-    <Compile Include="BaseDatos\clsTipoProducto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

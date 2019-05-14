@@ -8,9 +8,9 @@
     <title>Servicios</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col-md-4">
+    <%--<div class="container">--%>
+        <div class="row mt-5 justify-content-center no-gutters">
+            <div class="col-3 p-0">
                 <div class="card">
                     <div class="card-header text-center">
                         Formulario Servicios
@@ -37,7 +37,7 @@
                         </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-8 ml-5 p-0">
                 <div class="card">
                     <div class="card-header text-center">
                         Tabla Servicios
@@ -55,5 +55,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    <%--</div>--%>
 </asp:Content>
