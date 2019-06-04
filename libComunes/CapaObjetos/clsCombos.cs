@@ -161,8 +161,6 @@ namespace libComunes.CapaObjetos
             }
         }
 
-
-
         //public bool LlenarCombo()
         //{
         //    if (Validar())

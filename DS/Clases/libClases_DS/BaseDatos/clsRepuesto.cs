@@ -14,7 +14,7 @@ namespace libClases_DS.BaseDatos
         public Int32 nit { get; set; }
         private string SQL;
         public GridView grdRepuesto { get; set; }
-        public DropDownList cboProveedor {get; set; }
+        public DropDownList cboRepuesto { get; set; }
         public string error { get; private set; }
         #endregion
 
@@ -45,39 +45,6 @@ namespace libClases_DS.BaseDatos
             }
         }
 
-        public bool LlenarCombo()
-        {
-            //Se valida si el combo existe
-            if (cboProveedor == null)
-            {
-                error = "No definió el combo de proveedor";
-                return false;
-            }
-            //Como es un procedimiento almacenado, sólo se define el nombre del SP
-            SQL = "Proveedor_LlenarCombo";
-            //Creo la clase combo
-            clsCombos oCombo = new clsCombos();
-            //Pasar los parametros a la clase
-            oCombo.SQL = SQL;
-            oCombo.StoredProcedure = true;
-            oCombo.ColumnaTexto = "Texto";
-            oCombo.ColumnaValor = "Codigo";
-            oCombo.cboGenericoWeb = cboProveedor;
-            if (oCombo.LlenarComboWeb())
-            {
-                //Llena el combo, libera memoria y retorna true
-                cboProveedor = oCombo.cboGenericoWeb;
-                oCombo = null;
-                return true;
-            }
-            else
-            {
-                //Lee el error, libera memoria y retorna false
-                error = oCombo.Error;
-                oCombo = null;
-                return false;
-            }
-        }
 
         public bool Ingresar()
         {
@@ -142,6 +109,83 @@ namespace libClases_DS.BaseDatos
             else
             {
                 error = oConexion.Error;
+                oConexion = null;
+                return false;
+            }
+        }
+
+
+        public bool LlenarCombo()
+        {
+            //Se valida si el combo existe
+            if (cboRepuesto == null)
+            {
+                error = "No definió el combo de Repuesto";
+                return false;
+            }
+            //Como es un procedimiento almacenado, sólo se define el nombre del SP
+            SQL = "Repuesto_LlenarCombo";
+            //Creo la clase combo
+            clsCombos oCombo = new clsCombos();
+            //Pasar los parametros a la clase
+            oCombo.SQL = SQL;
+            oCombo.StoredProcedure = true;
+            oCombo.ColumnaTexto = "Texto";
+            oCombo.ColumnaValor = "Codigo";
+            oCombo.cboGenericoWeb = cboRepuesto;
+            if (oCombo.LlenarComboWeb())
+            {
+                //Llena el combo, libera memoria y retorna true
+                cboRepuesto = oCombo.cboGenericoWeb;
+                oCombo = null;
+                return true;
+            }
+            else
+            {
+                //Lee el error, libera memoria y retorna false
+                error = oCombo.Error;
+                oCombo = null;
+                return false;
+            }
+        }
+
+        public bool ConsultarPrecio()
+        {
+            SQL = "Repuesto_ConsultarValorUnitario";
+
+            clsConexion oConexion = new clsConexion();
+            oConexion.SQL = SQL;
+            oConexion.StoredProcedure = true;
+            oConexion.AgregarParametro("@prCodigo", System.Data.SqlDbType.Int, 4, codigo);
+            //Ejecuta consultar
+            if (oConexion.Consultar())
+            {
+                //Guarda los datos en un objeto Reader, permite leer los datos hacia adelante (Cada fila)
+                //En cada fila, el READER maneja los datos como un vector.
+                //Lo primero que se revisa es si hay datos.
+                if (oConexion.Reader.HasRows)
+                {
+                    //Se debe leer el Reader
+                    oConexion.Reader.Read();
+                    //Se leen los datos por posición y tipo de dato
+                    valor = oConexion.Reader.GetDouble(0);
+                    //Cerrar conexion, liberar y retornar
+                    oConexion.CerrarConexion();
+                    oConexion = null;
+                    return true;
+                }
+                else
+                {
+                    error = "No existen Repuesto con el código: " + codigo;
+                    oConexion.CerrarConexion();
+                    oConexion = null;
+                    return false;
+                }
+            }
+            else
+            {
+                error = oConexion.Error;
+                oConexion.CerrarConexion();
                 oConexion = null;
                 return false;
             }

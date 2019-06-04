@@ -27,9 +27,11 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-5">
-                <li class="nav-item" id="inicio-nav"><a class="nav-link py-3 mr-4 px-4 active" href="#"><i class="fas fa-home mr-2"></i>Inicio</a></li>
+                <li class="nav-item" id="inicio-nav"><a class="nav-link py-3 mr-4 px-4 active" href="/BasesDatos/Inicio.aspx"><i class="fas fa-home mr-2"></i>Inicio</a></li>
                 <li class="nav-item" id="servicios-nav"><a class="nav-link py-3 mr-4 px-4 active" href="/BasesDatos/Servicio.aspx"><i class="fas fa-star mr-2"></i>Servicios</a></li>
                 <li class="nav-item" id="repuestos-nav"><a class="nav-link py-3 mr-4 px-4 active" href="/BasesDatos/Repuesto.aspx"><i class="fas fa-tools mr-2"></i>Repuestos</a></li>
+                <li class="nav-item" id="factura-nav"><a class="nav-link py-3 mr-4 px-4 active" href="/BasesDatos/Factura.aspx"><i class="fas fa-receipt mr-2"></i>Factura</a></li>
+                <li class="nav-item" id="propietario-nav"><a class="nav-link py-3 mr-4 px-4 active" href="/BasesDatos/Propietario.aspx"><i class="fas fa-user-plus mr-2"></i>Propietario</a></li>
             </ul>
            <%-- <ul class="navbar-nav ml-auto">
                 <a class="nav-item nav-link py-3 mr-4 px-4 active" href="#"><i class="fas fa-user-plus mr-2"></i>Registrarse</a>

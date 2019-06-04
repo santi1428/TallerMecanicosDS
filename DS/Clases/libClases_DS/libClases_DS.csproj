@@ -45,9 +45,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseDatos\clsCarro.cs" />
+    <Compile Include="BaseDatos\clsFactura.cs" />
+    <Compile Include="BaseDatos\clsPropietario.cs" />
+    <Compile Include="BaseDatos\clsProveedor.cs" />
+    <Compile Include="BaseDatos\clsReparacion.cs" />
     <Compile Include="BaseDatos\clsRepuesto.cs" />
     <Compile Include="BaseDatos\clsServicio.cs" />
+    <Compile Include="BaseDatos\clsVendedor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RN\clsRN_TALLER_CARROS.cs" />
+    <Compile Include="RN\RN_TALLER_CARROS.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="XML\RN_TALLER.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

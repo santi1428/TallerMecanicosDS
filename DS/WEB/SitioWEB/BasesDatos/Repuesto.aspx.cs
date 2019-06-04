@@ -118,13 +118,13 @@ namespace SitioWEB.BasesDatos
 
         private void LlenarCombo()
         {
-            clsRepuesto oRepuesto = new clsRepuesto();
-            oRepuesto.cboProveedor = ddlProveedor;
-            if (!oRepuesto.LlenarCombo())
+            clsProveedor oProveedor = new clsProveedor();
+            oProveedor.cboProveedor = ddlProveedor;
+            if (!oProveedor.LlenarCombo())
             {
-                lblError.Text = oRepuesto.error;
+                lblError.Text = oProveedor.error;
             }
-            oRepuesto = null;
+            oProveedor = null;
         }
 
         protected void grdServicio_SelectedIndexChanged(object sender, EventArgs e)

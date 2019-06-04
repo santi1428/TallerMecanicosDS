@@ -74,11 +74,35 @@
     <Content Include="assets\js\bootstrap.min.js" />
     <Content Include="assets\js\jquery.min.js" />
     <Content Include="assets\js\popper.min.js" />
+    <Content Include="BasesDatos\Factura.aspx" />
+    <Content Include="BasesDatos\Inicio.aspx" />
+    <Content Include="BasesDatos\Propietario.aspx" />
     <Content Include="BasesDatos\Repuesto.aspx" />
     <Content Include="BasesDatos\Servicio.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BasesDatos\Factura.aspx.cs">
+      <DependentUpon>Factura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasesDatos\Factura.aspx.designer.cs">
+      <DependentUpon>Factura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BasesDatos\Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasesDatos\Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BasesDatos\Propietario.aspx.cs">
+      <DependentUpon>Propietario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasesDatos\Propietario.aspx.designer.cs">
+      <DependentUpon>Propietario.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BasesDatos\Repuesto.aspx.cs">
       <DependentUpon>Repuesto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -10,7 +10,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <%--<div class="container">--%>
         <div class="row mt-5 justify-content-center no-gutters">
-            <div class="col-3 p-0">
+            <div class="col-3 p-0 card shadow-lg rounded">
                 <div class="card">
                     <div class="card-header text-center">
                         Formulario Servicios
@@ -32,12 +32,12 @@
                             <asp:Label ID="lblError" runat="server" Text="" CssClass="text-danger font-weight-bold"></asp:Label>
                         </div>
                             <asp:LinkButton ID="btnIngresar" runat="server" CssClass="btn btn-dark btn-block" OnClick="btnIngresar_Click1"><i class="fas fa-plus-circle mr-2"></i>Ingresar</asp:LinkButton>
-                            <asp:LinkButton ID="btnActualizar" runat="server" CssClass="btn btn-success btn-block" OnClick="btnActualizar_Click"><i class="fas fa-pen-alt mr-2"></i>Actualizar</asp:LinkButton>
+                            <asp:LinkButton ID="btnActualizar" runat="server" CssClass="btn btn-success btn-block" OnClick="btnActualizar_Click"><i class="fas fa-edit mr-2"></i>Actualizar</asp:LinkButton>
                             <asp:LinkButton ID="btnEliminar" runat="server" CssClass="btn btn-danger btn-block" OnClick="btnEliminar_Click"><i class="fas fa-trash-alt mr-2"></i>Eliminar</asp:LinkButton>
                         </div>
                 </div>
             </div>
-            <div class="col-8 ml-5 p-0">
+            <div class="col-8 ml-5 p-0 card shadow-lg rounded">
                 <div class="card">
                     <div class="card-header text-center">
                         Tabla Servicios
@@ -46,7 +46,9 @@
                         <%--<asp:GridView ID="grdServicio" runat="server" CssClass="mx-auto table table-hover text-center"></asp:GridView>--%>
                     <asp:GridView ID="grdServicio" runat="server" CssClass="mx-auto table table-borderless  text-center mt-2" OnSelectedIndexChanged="grdServicio_SelectedIndexChanged">
                         <Columns>
-                            <asp:CommandField HeaderText="Opciones" ShowHeader="True" ShowSelectButton="True" />
+                            <asp:CommandField HeaderText="Opciones" ShowHeader="True" ShowSelectButton="True" SelectText="&lt;i class=&quot;fas fa-pen-alt mr-2&quot;&gt;&lt;/i&gt;Editar" >
+                            <ControlStyle CssClass="btn btn-success" />
+                            </asp:CommandField>
                         </Columns>
                         <HeaderStyle CssClass="thead-dark" />
                         <SelectedRowStyle CssClass="bg-dark text-white" />

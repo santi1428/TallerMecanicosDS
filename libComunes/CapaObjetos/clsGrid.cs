@@ -1,5 +1,4 @@
 using System;
-using System.Data;
 using System.Data.SqlClient;
 using System.Web.UI.WebControls;
 using libComunes.CapaDatos;
@@ -99,6 +98,7 @@ namespace libComunes.CapaObjetos
             }
             objConexionBd.NombreTabla = strNombreTabla;
             objConexionBd.StoredProcedure = StoredProcedure;
+            objConexionBd.oCommand = oCommand;
             objConexionBd.SQL = strSQL;
 
             if (objConexionBd.LlenarDataSet())
@@ -133,7 +133,6 @@ namespace libComunes.CapaObjetos
                 return (false);
             }
         }
-
         #endregion
     }
 }
